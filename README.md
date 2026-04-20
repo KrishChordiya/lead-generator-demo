@@ -9,42 +9,34 @@
 
 ---
 
-### 1. Prerequisites
-Ensure you have Node.js 18+ installed.
+## 🚀 Key Features
 
-### 2. Environment Variables
-Create a `.env.local` file in the root directory:
-```env
-# AI & LLM
-OPENAI_API_KEY=your_openai_or_openrouter_key
-OPENAI_BASE_URL=https://openrouter.ai/api/v1 # If using OpenRouter
-OPENAI_MODEL_NAME=openrouter/elephant-alpha
+- **Intelligence Synthesis Pipeline**: A 4-step autonomous workflow that sources, analyzes, matches, and drafts outbound assets.
+- **AI-Native Web Exploration**: Powered by **Tavily AI Search** for real-time web crawling and competitive intelligence.
+- **Strategic Matchmaking**: Performs "Contextual Intersection" between your product's value and the lead's unique pain points.
+- **Zero-Placeholder Outreach**: Generates professional, ready-to-send emails—strictly avoiding generic brackets like `[Name]` or `[Company]`.
+- **Interactive Sandbox**: A live tracker interface to monitor AI agents in real-time as they research, analyze, and synthesize data.
+- **Amber & Charcoal Design System**: A premium, "HubSpot-inspired" aesthetic optimized for high trust, clarity, and professional impact.
 
-# Search Engine
-TAVILY_API_KEY=your_tavily_api_key
-```
+## 🛠 Tech Stack
 
-### 3. Installation
-```bash
-npm install
-```
-
-### 4. Run Development Server
-```bash
-npm run dev
-```
-Open [http://localhost:3000](http://localhost:3000) to see the platform in action.
+- **Framework**: Next.js 15 (App Router)
+- **Styling**: Tailwind CSS v4 + Lucide React
+- **Animations**: Framer Motion (Spring Physics)
+- **AI Engine**: OpenAI / OpenRouter (Elephant Alpha)
+- **Search API**: Tavily AI (Advanced Research & Summary)
+- **Validation**: Zod (Strict Type-Safe JSON Schema Enforcement)
 
 ## 🏗 Modular Architecture
 
-The project is structured into modular, reusable components for easy scaling:
-- `components/layout/`: Global branding and navigation.
-- `components/landing/`: High-conversion marketing components.
-- `components/demo/`: Specialized sandbox and terminal logic.
-- `app/api/`: Optimized serverless routes for Search, Analysis, and Drafting.
+The project is structured into modular, reusable components for rapid scaling and maintainability:
+- `components/layout/`: Global branding, sticky headers, and navigation.
+- `components/landing/`: High-conversion marketing and ROI-focused components.
+- `components/demo/`: Specialized sandbox, terminal tracking, and result visualization.
+- `app/api/`: Optimized serverless routes for autonomous Search, Analysis, and Drafting.
 
 ## 📄 License
-Custom Portfolio License. Designed for high-end freelance showcases.
+Custom Portfolio License. Designed for high-end freelance showcases and enterprise prototypes.
 
 ---
 *Results and workflows are custom-engineered for specific client needs.*
