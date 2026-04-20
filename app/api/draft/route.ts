@@ -104,10 +104,9 @@ Target URL: ${targetUrl || "Not provided"}
 
   } catch (error: any) {
     console.error("Drafting API Error:", error);
-    const errorMessage = error instanceof z.ZodError 
-      ? `Validation Error: ${JSON.stringify(error.errors)}` 
+    const errorMessage = error instanceof z.ZodError
+      ? `Validation Error: ${JSON.stringify(error.issues)}` 
       : (error.message || "Failed to generate email draft");
-
     return NextResponse.json(
       { success: false, error: errorMessage },
       { status: 500 }

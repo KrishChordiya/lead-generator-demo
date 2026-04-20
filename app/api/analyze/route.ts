@@ -102,7 +102,7 @@ ${targetContext.slice(0, 15000)}
   } catch (error: any) {
     console.error("Analysis API Error:", error);
     const errorMessage = error instanceof z.ZodError 
-      ? `Validation Error: ${JSON.stringify(error.errors)}` 
+      ? `Validation Error: ${JSON.stringify(error.issues)}` 
       : (error.message || "Analysis failed");
     return NextResponse.json(
       { success: false, error: errorMessage },

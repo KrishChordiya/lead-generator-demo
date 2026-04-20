@@ -15,7 +15,7 @@ export function ValueCard({ icon, title, description }: ValueCardProps) {
         initial: { opacity: 0, y: 30 },
         animate: { opacity: 1, y: 0 }
       }}
-      whileHover={{ y: -8, shadow: "0 25px 50px -12px rgba(217, 119, 6, 0.15)" }}
+      whileHover={{ y: -8, boxShadow: "0 25px 50px -12px rgba(217, 119, 6, 0.15)" }}
       className="bg-surface p-10 rounded-3xl border border-border shadow-sm transition-all duration-300 group relative overflow-hidden"
     >
       <div className="mb-8 p-4 bg-brand-light rounded-2xl w-fit group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-500 text-primary">
